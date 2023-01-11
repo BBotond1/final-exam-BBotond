@@ -7,8 +7,8 @@
 $primary : #f8f7f3;
 $secondary : #1a24fb;
 
-// font-family: 'Overpass', sans-serif;
-// font-family: 'Montserrat', sans-serif;
+$Overpass: 'Overpass', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
@@ -23,3 +23,117 @@ $secondary : #1a24fb;
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+  background-color: $primary;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background-color: $secondary;
+  padding: 0px 12px;
+
+  p{
+    font-size: 12px;
+    font-family: $Montserrat;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: $primary;
+  }
+  span {
+    color: $primary;
+  }
+}
+
+.card-container {
+  max-width: 1280px;
+  display: flex;
+  gap: 100px 20px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 40px;
+  margin: 0;
+
+  .card{
+    position: relative;
+    padding: 40px;
+    color: $secondary;
+    border: 1px solid $secondary;
+    max-width: 380px;
+    min-height: 400px;
+
+    .number{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      font-family: $Montserrat;
+      font-weight: 700;
+      position: absolute;
+      top: 1px;
+      right: 1px;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      font-family: $Montserrat;
+      min-height: 105px;
+    }
+
+    .sub {
+      padding-bottom: 6px;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: $Overpass;
+    }
+
+    .text{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $Montserrat;
+    }
+
+    button {
+      color: $secondary;
+      background-color: $primary;
+      border: 0;
+      width: 100%;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: -24px;
+      left: 0px;
+      padding: 0px 2px;
+
+      .button-text{
+        font-family: $Overpass;
+        font-size: 14px;
+      }
+
+      
+    }
+
+    button:hover {
+      background-color: $secondary;
+      color: $primary;
+      
+    }
+
+
+
+
+  }
+
+}

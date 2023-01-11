@@ -37,4 +37,101 @@
 
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  background-color: #f8f7f3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background-color: #1a24fb;
+  padding: 0px 12px;
+}
+header p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  color: #f8f7f3;
+}
+header span {
+  color: #f8f7f3;
+}
+
+.card-container {
+  max-width: 1280px;
+  display: flex;
+  gap: 100px 20px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 40px;
+  margin: 0;
+}
+.card-container .card {
+  position: relative;
+  padding: 40px;
+  color: #1a24fb;
+  border: 1px solid #1a24fb;
+  max-width: 380px;
+  min-height: 400px;
+}
+.card-container .card .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+.card-container .card .title {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  min-height: 105px;
+}
+.card-container .card .sub {
+  padding-bottom: 6px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Overpass", sans-serif;
+}
+.card-container .card .text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.card-container .card button {
+  color: #1a24fb;
+  background-color: #f8f7f3;
+  border: 0;
+  width: 100%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -24px;
+  left: 0px;
+  padding: 0px 2px;
+}
+.card-container .card button .button-text {
+  font-family: "Overpass", sans-serif;
+  font-size: 14px;
+}
+.card-container .card button:hover {
+  background-color: #1a24fb;
+  color: #f8f7f3;
 }/*# sourceMappingURL=style.css.map */
